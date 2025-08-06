@@ -812,6 +812,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boy On Bike
       objectReference: {fileID: 0}
+    - target: {fileID: 1049215756669502608, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8259902262874565938, guid: 43aef25f5164c403faa80c0edefa7cb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4556,6 +4561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 626697960}
+  - component: {fileID: 626697961}
   m_Layer: 0
   m_Name: PE&W
   m_TagString: Untagged
@@ -4590,6 +4596,21 @@ Transform:
   - {fileID: 94947360}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &626697961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626697959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05e9e86da5d13140a70cdf804cd2535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redLights: []
+  yellowLights: []
+  greenLights: []
 --- !u!65 &632533224
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5874,6 +5895,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 834535455}
+  - component: {fileID: 834535456}
   m_Layer: 0
   m_Name: VE&W
   m_TagString: Untagged
@@ -5902,6 +5924,18 @@ Transform:
   - {fileID: 1373401987}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &834535456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834535454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47c67b6a1967ba341a2e1c03f698d7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &835099719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6266,6 +6300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 890300865}
+  - component: {fileID: 890300866}
   m_Layer: 0
   m_Name: VN&S
   m_TagString: Untagged
@@ -6294,6 +6329,18 @@ Transform:
   - {fileID: 1333421122}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &890300866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890300864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47c67b6a1967ba341a2e1c03f698d7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &890487000
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12080,6 +12127,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.218094, y: 0, z: 23.582117}
   m_Center: {x: -242.0877, y: 26.051638, z: 10.608949}
+--- !u!1 &1461370152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1461370153}
+  m_Layer: 0
+  m_Name: IntersectionLights
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1461370153
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461370152}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.6059914, y: 14.799953, z: 5.5534306}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1464310306
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13656,6 +13734,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1678006958}
+  - component: {fileID: 1678006959}
   m_Layer: 0
   m_Name: PN&S
   m_TagString: Untagged
@@ -13690,6 +13769,21 @@ Transform:
   - {fileID: 555258003}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1678006959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678006957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05e9e86da5d13140a70cdf804cd2535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redLights: []
+  yellowLights: []
+  greenLights: []
 --- !u!1 &1684396060
 GameObject:
   m_ObjectHideFlags: 0
@@ -14405,6 +14499,61 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.31521606, y: 0, z: 7.538863}
   m_Center: {x: -206.00395, y: -42.019886, z: 3.7694316}
+--- !u!1 &1746387411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1746387413}
+  - component: {fileID: 1746387412}
+  m_Layer: 0
+  m_Name: TrafficController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1746387412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746387411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6329962ac55a6dc47bdd67b1ca9ecb98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicleLight_EW: {fileID: 834535456}
+  vehicleLight_NS: {fileID: 890300866}
+  pedestrianLight_EW: {fileID: 626697961}
+  pedestrianLight_NS: {fileID: 1678006959}
+  vehicleGreenTime_EW: 10
+  vehicleYellowTime_EW: 3
+  vehicleGreenTime_NS: 10
+  vehicleYellowTime_NS: 3
+  pedestrianGreenTime: 7
+  pedestrianYellowTime: 3
+  allRedBufferTime: 1
+--- !u!4 &1746387413
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746387411}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.6059914, y: 14.799953, z: 5.5534306}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1760033929
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15443,6 +15592,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boy On Scooter (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3778099700479159457, guid: 19d0860ff7c9249a1885b4d5896e5ce2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5167948693230314246, guid: 19d0860ff7c9249a1885b4d5896e5ce2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15857,6 +16011,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 1950sClassicCar#6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786553888636991661, guid: 327a9926a03364940ab4d58ed700f8e4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4590234383001318261, guid: 327a9926a03364940ab4d58ed700f8e4,
         type: 3}
@@ -21629,6 +21788,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wayponts for Red car
       objectReference: {fileID: 0}
+    - target: {fileID: 5987968019278055059, guid: de58654fc581748699a7e3e3fc89f730,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8815527673765559841, guid: de58654fc581748699a7e3e3fc89f730,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22248,6 +22412,8 @@ SceneRoots:
   - {fileID: 1860360916}
   - {fileID: 1902768582}
   - {fileID: 85314463}
+  - {fileID: 1461370153}
+  - {fileID: 1746387413}
   - {fileID: 626697960}
   - {fileID: 1678006958}
   - {fileID: 834535455}
