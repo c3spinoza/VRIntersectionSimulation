@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1225213044686919111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4747945890047634531}
+  - component: {fileID: 730117468664945238}
+  - component: {fileID: 5597017121046873864}
+  - component: {fileID: 5822158630325108808}
+  - component: {fileID: 8308690216854389725}
+  - component: {fileID: 3428049819494315551}
+  m_Layer: 0
+  m_Name: WeatherController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4747945890047634531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225213044686919111}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &730117468664945238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225213044686919111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1b9ff7e42ba574f8da36a9ea8380de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  directionalLight: {fileID: 0}
+  daySkybox: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  dayAmbientLight: {r: 1, g: 1, b: 1, a: 1}
+  dayFogColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}
+  dayFogDensity: 0
+  rainController: {fileID: 5822158630325108808}
+--- !u!114 &5597017121046873864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225213044686919111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52849cdf0ac1f9042b7e0f93876c6f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nightSkybox: {fileID: 2100000, guid: 2d056ac30ecc9e542b26e06133f23602, type: 2}
+  directionalLight: {fileID: 0}
+  nightAmbientLight: {r: 0, g: 0, b: 0, a: 1}
+  nightDirectionalLightIntensity: 0.1
+  rainController: {fileID: 5822158630325108808}
+--- !u!114 &5822158630325108808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225213044686919111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1545a7aad1076404087901fb5209dd68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rainPrefab: {fileID: 2283768417534050, guid: b47fb0f8a2b15674093738c6b56a9102, type: 3}
+  rainSound: {fileID: 8300000, guid: 3359e9d10af08ca46ae396298dbd1ed9, type: 3}
+--- !u!114 &8308690216854389725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225213044686919111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af9fa5fd59f2ccb419e26eb5e20b5976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weatherMenuPanel: {fileID: 0}
+  maximizedIcon: {fileID: 0}
+--- !u!114 &3428049819494315551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225213044686919111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5b507fdc70db043bb4f54ea1fc6cbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weatherResetController: {fileID: 730117468664945238}
+  nightTimeController: {fileID: 5597017121046873864}
+  rainWeatherController: {fileID: 5822158630325108808}
+  menuToggle: {fileID: 8308690216854389725}
