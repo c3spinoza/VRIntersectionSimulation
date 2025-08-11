@@ -1,11 +1,8 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using Newtonsoft.Json; // Requires Newtonsoft JSON (Json.NET for Unity)
+using Newtonsoft.Json; 
 using System.Linq;
-
-
-
 
 public class Ebike : MonoBehaviour
 {
@@ -14,7 +11,7 @@ public class Ebike : MonoBehaviour
 
 
     //constants
-    private const float xConversion = 77.421f/665.88f;
+    private const float xConversion = 77.421f / 665.88f;
     private const float zConversion = 62.623f / 759.76f;
     private const float xOffset = 390 * xConversion;
     private const float zOffset = 400 * zConversion;
@@ -32,18 +29,20 @@ public class Ebike : MonoBehaviour
         Debug.Log("Loaded paths: " + EbikePaths3D.Count);
         var ABC = ConvertToVector3(data);
         var firstPair = ABC.First();
-        Debug.Log("First key: " + firstPair.Key);
-        Debug.Log("First vector: " + firstPair.Value[0]);
+        //Debug.Log("First key: " + firstPair.Key);
+        //Debug.Log("First vector: " + firstPair.Value[0]);
     }
 
     // Helper to get the first path
-    public List<Vector3> GetFirstPath()   // <-- ADD THIS
+    public List<Vector3> GetFirstPath() // <-- ADD THIS
     {
         var enumerator = EbikePaths3D.GetEnumerator();
-        Debug.Log($"Bike Paths 3D: {EbikePaths3D}");
-        if (enumerator.MoveNext()){
+        //Debug.Log($"Bike Paths 3D: {EbikePaths3D}");
+        if (enumerator.MoveNext())
+        {
             return enumerator.Current.Value; // return the first path’s vector list
         }
+
         return null;
     }
 
@@ -67,6 +66,7 @@ public class Ebike : MonoBehaviour
                     if (coords.Count >= 2)
                         path.Add(new Vector2(coords[0], coords[1]));
                 }
+
                 ebikePaths[entry.Key] = path;
             }
 
@@ -74,41 +74,38 @@ public class Ebike : MonoBehaviour
             if (ebikePaths.ContainsKey("186_ebike"))
             {
                 Debug.Log("Loaded path for 186_ebike with " + ebikePaths["186_ebike"].Count + " points.");
-                Debug.Log("First point: " + ebikePaths["186_ebike"][0]);
+                //Debug.Log("First point: " + ebikePaths["186_ebike"][0]);
             }
+
             return ebikePaths;
         }
         else
         {
-           
             Debug.LogError("JSON file not found at " + filePath);
             return null;
         }
     }
 
-    Dictionary<string, List<Vector3>> ConvertToVector3(Dictionary<string, List<Vector2>> Data)
+    Dictionary<string, List<Vector3>> ConvertToVector3(Dictionary<string, List<Vector2>> data)
     {
-        var Paths = new Dictionary<string, List<Vector3>>(Data.Count);
+        var paths = new Dictionary<string, List<Vector3>>(data.Count);
 
-        foreach(var obj in Data)
+        foreach (var obj in data)
         {
             var key = obj.Key;
             var path = obj.Value;
             var newPath = new List<Vector3>();
-           for(var i = 0; i < path.Count; i++)
+            for (var i = 0; i < path.Count; i++)
             {
                 var vector = path[i];
                 var x = vector.x * xConversion - xOffset;
                 var z = vector.y * zConversion - zOffset;
                 newPath.Add(new Vector3(x, 1, z));
-
-
             }
-            Paths.Add(key, newPath);
 
+            paths.Add(key, newPath);
         }
-        return Paths;
 
-
+        return paths;
     }
 }

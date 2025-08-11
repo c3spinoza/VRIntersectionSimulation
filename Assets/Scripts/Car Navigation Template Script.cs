@@ -45,7 +45,15 @@ public class CarNavigator : MonoBehaviour
         currentIndex = Mathf.Clamp(startIndex, 0, waypoints.Length - 1);
         agent.isStopped = false;
         agent.speed = speed;
-        agent.SetDestination(waypoints[currentIndex].position);
+        try
+        {
+            agent.SetDestination(waypoints[currentIndex].position);
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"[{nameof(CarNavigator)}] Error setting destination: {e.Message}");
+        }
+       
     }
 
     void Update()
