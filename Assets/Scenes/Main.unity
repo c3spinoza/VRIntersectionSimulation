@@ -799,79 +799,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.218109, y: 0, z: 23.582117}
   m_Center: {x: -262.52393, y: 26.051638, z: 10.608949}
---- !u!1001 &85314463
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1049215756669502608, guid: 43aef25f5164c403faa80c0edefa7cb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Boy On Bike
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049215756669502608, guid: 43aef25f5164c403faa80c0edefa7cb5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259902262874565938, guid: 43aef25f5164c403faa80c0edefa7cb5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 13.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259902262874565938, guid: 43aef25f5164c403faa80c0edefa7cb5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.29299998
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259902262874565938, guid: 43aef25f5164c403faa80c0edefa7cb5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 54.397003
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259902262874565938, guid: 43aef25f5164c403faa80c0edefa7cb5,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259902262874565938, guid: 43aef25f5164c403faa80c0edefa7cb5,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259902262874565938, guid: 43aef25f5164c403faa80c0edefa7cb5,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259902262874565938, guid: 43aef25f5164c403faa80c0edefa7cb5,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259902262874565938, guid: 43aef25f5164c403faa80c0edefa7cb5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259902262874565938, guid: 43aef25f5164c403faa80c0edefa7cb5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8259902262874565938, guid: 43aef25f5164c403faa80c0edefa7cb5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 43aef25f5164c403faa80c0edefa7cb5, type: 3}
 --- !u!1 &94396336
 GameObject:
   m_ObjectHideFlags: 0
@@ -12289,7 +12216,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441622007}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef127f6f6f3d63943833f591c0d575af, type: 3}
   m_Name: 
@@ -15939,79 +15866,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.1293945, y: 0.00008392336, z: 38.012146}
   m_Center: {x: -278.09796, y: -118.75206, z: 19.006073}
---- !u!1001 &1860360916
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3778099700479159457, guid: 19d0860ff7c9249a1885b4d5896e5ce2,
-        type: 3}
-      propertyPath: m_Name
-      value: Boy On Scooter (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3778099700479159457, guid: 19d0860ff7c9249a1885b4d5896e5ce2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5167948693230314246, guid: 19d0860ff7c9249a1885b4d5896e5ce2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 74.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 5167948693230314246, guid: 19d0860ff7c9249a1885b4d5896e5ce2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5167948693230314246, guid: 19d0860ff7c9249a1885b4d5896e5ce2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 15.922
-      objectReference: {fileID: 0}
-    - target: {fileID: 5167948693230314246, guid: 19d0860ff7c9249a1885b4d5896e5ce2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.19370681
-      objectReference: {fileID: 0}
-    - target: {fileID: 5167948693230314246, guid: 19d0860ff7c9249a1885b4d5896e5ce2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5167948693230314246, guid: 19d0860ff7c9249a1885b4d5896e5ce2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.9810595
-      objectReference: {fileID: 0}
-    - target: {fileID: 5167948693230314246, guid: 19d0860ff7c9249a1885b4d5896e5ce2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5167948693230314246, guid: 19d0860ff7c9249a1885b4d5896e5ce2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5167948693230314246, guid: 19d0860ff7c9249a1885b4d5896e5ce2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -202.338
-      objectReference: {fileID: 0}
-    - target: {fileID: 5167948693230314246, guid: 19d0860ff7c9249a1885b4d5896e5ce2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 19d0860ff7c9249a1885b4d5896e5ce2, type: 3}
 --- !u!1 &1861617386
 GameObject:
   m_ObjectHideFlags: 0
@@ -22854,9 +22708,7 @@ SceneRoots:
   - {fileID: 4772036581806023669}
   - {fileID: 8335941292551246771}
   - {fileID: 2123658983}
-  - {fileID: 1860360916}
   - {fileID: 1902768582}
-  - {fileID: 85314463}
   - {fileID: 1461370153}
   - {fileID: 1584553381}
   - {fileID: 954290571}
