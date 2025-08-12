@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/ObjectAnimation.cs.meta
-guid: 76bed4570831f4284a95320c7261bd09
-========
 guid: 7cc2c22ff5f5a0b16ac346b6ee96d610
->>>>>>>> dfa0e519aab6187e6fd641087ad743dc6015f4a5:Assets/Pedestrians/ObjectAnimation.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
