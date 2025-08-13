@@ -10,6 +10,7 @@ public class BikeMover : MonoBehaviour
     private List<Vector3> path;
     private int currentIndex = 0;
     private NavMeshAgent agent;
+    private const float fixedY = 0.4f;
 
     void Start()
     {
@@ -26,7 +27,7 @@ public class BikeMover : MonoBehaviour
             currentIndex++;
             if (currentIndex < path.Count)
             {
-                agent.SetDestination(path[currentIndex]);
+                SetDestinationWithFixedY(path[currentIndex]);
             }
             else
             {
@@ -45,11 +46,11 @@ public class BikeMover : MonoBehaviour
             return;
         }
 
-        transform.position = path[0];
+        agent.Warp(FixY(path[0]));
         currentIndex = 1;
 
         if (currentIndex < path.Count)
-            agent.SetDestination(path[currentIndex]);
+            SetDestinationWithFixedY(path[currentIndex]);
     }
 
     private void LoadNextPath()
@@ -63,10 +64,20 @@ public class BikeMover : MonoBehaviour
             return;
         }
 
-        transform.position = path[0];
+        agent.Warp(FixY(path[0]));
         currentIndex = 1;
 
         if (currentIndex < path.Count)
-            agent.SetDestination(path[currentIndex]);
+            SetDestinationWithFixedY(path[currentIndex]);
+    }
+
+    private void SetDestinationWithFixedY(Vector3 target)
+    {
+        agent.SetDestination(FixY(target));
+    }
+
+    private Vector3 FixY(Vector3 original)
+    {
+        return new Vector3(original.x, fixedY, original.z);
     }
 }
