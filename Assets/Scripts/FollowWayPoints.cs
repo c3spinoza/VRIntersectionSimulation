@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using System.Collections.Generic;
 
-public class FollowWayPoints : MonoBehaviour
+public class AgentWaypointNavigator : MonoBehaviour
 {
     [Header("Waypoint Settings")]
     public Transform waypointParent; // Parent of all waypoint children
@@ -10,8 +10,8 @@ public class FollowWayPoints : MonoBehaviour
 
     private NavMeshAgent agent;
     private List<Transform> waypoints = new List<Transform>();
-    private int currentIndex = 0;
-    private int direction = 1; // 1 = forward, -1 = backward
+    private HashSet<Transform> visited = new HashSet<Transform>();
+    private Transform currentTarget;
 
     void Start()
     {
@@ -37,37 +37,44 @@ public class FollowWayPoints : MonoBehaviour
             return;
         }
 
-        MoveToWaypoint(currentIndex);
+        MoveToNextClosestWaypoint();
     }
 
     void Update()
     {
-        if (!agent.pathPending && agent.remainingDistance <= stoppingDistance)
+        if (currentTarget != null && !agent.pathPending && agent.remainingDistance <= stoppingDistance)
         {
-            // Move index forward or backward
-            currentIndex += direction;
+            visited.Add(currentTarget);
+            currentTarget = null;
 
-            // Reverse direction at ends
-            if (currentIndex >= waypoints.Count)
-            {
-                currentIndex = waypoints.Count - 2;
-                direction = -1;
-            }
-            else if (currentIndex < 0)
-            {
-                currentIndex = 1;
-                direction = 1;
-            }
-
-            MoveToWaypoint(currentIndex);
+            if (visited.Count < waypoints.Count)
+                MoveToNextClosestWaypoint();
+            else
+                agent.isStopped = true; // All waypoints visited
         }
     }
 
-    void MoveToWaypoint(int index)
+    void MoveToNextClosestWaypoint()
     {
-        if (index >= 0 && index < waypoints.Count)
+        float shortestDistance = Mathf.Infinity;
+        Transform closest = null;
+
+        foreach (Transform wp in waypoints)
         {
-            agent.SetDestination(waypoints[index].position);
+            if (visited.Contains(wp)) continue;
+
+            float dist = Vector3.Distance(transform.position, wp.position);
+            if (dist < shortestDistance)
+            {
+                shortestDistance = dist;
+                closest = wp;
+            }
+        }
+
+        if (closest != null)
+        {
+            currentTarget = closest;
+            agent.SetDestination(currentTarget.position);
         }
     }
 }
