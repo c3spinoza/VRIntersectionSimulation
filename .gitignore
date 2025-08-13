@@ -31,8 +31,14 @@
 # Jetbrains Rider personal-layer settings
 *.DotSettings.user
 
+# Ignore JetBrains Rider/IntelliJ config
+.idea/
+
 # Visual Studio cache directory
 .vs/
+
+# Ignore VS Code config
+.vscode/
 
 # Gradle cache directory
 .gradle/
@@ -97,6 +103,3 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
-*.meta
-*.meta
-*.meta
