@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using Newtonsoft.Json; 
+using Newtonsoft.Json;
 using System.Linq;
 
 public class Ebike : MonoBehaviour
@@ -9,16 +9,18 @@ public class Ebike : MonoBehaviour
     private string filePath;
     public Dictionary<string, List<Vector3>> EbikePaths3D;
 
-
-    //constants
+    // Conversion constants
     private const float xConversion = 77.421f / 665.88f;
     private const float zConversion = 62.623f / 759.76f;
     private const float xOffset = 390 * xConversion;
     private const float zOffset = 400 * zConversion;
 
-
-    // Store ebike paths: key = bike name/id, value = list of Vector2 points
+    // Store original 2D paths
     public Dictionary<string, List<Vector2>> ebikePaths;
+
+    // Keep paths in a list for easy ordered access
+    private List<List<Vector3>> allPathsList;
+    private int currentPathIndex = -1;
 
     private void Awake()
     {
@@ -27,36 +29,43 @@ public class Ebike : MonoBehaviour
         var data = LoadJson();
         EbikePaths3D = ConvertToVector3(data);
         Debug.Log("Loaded paths: " + EbikePaths3D.Count);
-        var ABC = ConvertToVector3(data);
-        var firstPair = ABC.First();
-        //Debug.Log("First key: " + firstPair.Key);
-        //Debug.Log("First vector: " + firstPair.Value[0]);
+
+        // Convert dictionary values to list for sequential access
+        allPathsList = EbikePaths3D.Values.ToList();
     }
 
-    // Helper to get the first path
-    public List<Vector3> GetFirstPath() // <-- ADD THIS
+    // Get the first path in the list
+    public List<Vector3> GetFirstPath()
     {
-        var enumerator = EbikePaths3D.GetEnumerator();
-        //Debug.Log($"Bike Paths 3D: {EbikePaths3D}");
-        if (enumerator.MoveNext())
+        currentPathIndex = 0;
+        if (allPathsList.Count > 0)
         {
-            return enumerator.Current.Value; // return the first path’s vector list
+            return allPathsList[0];
         }
-
         return null;
     }
 
+    // Get the next path in the list
+    public List<Vector3> GetNextPath()
+    {
+        currentPathIndex++;
+        if (currentPathIndex >= 0 && currentPathIndex < allPathsList.Count)
+        {
+            return allPathsList[currentPathIndex];
+        }
 
+        // No more paths left
+        return null;
+    }
+
+    // Load JSON and convert to Vector2 paths
     Dictionary<string, List<Vector2>> LoadJson()
     {
         if (File.Exists(filePath))
         {
             string json = File.ReadAllText(filePath);
-
-            // First, parse into dictionary of lists of lists (raw numbers)
             var rawData = JsonConvert.DeserializeObject<Dictionary<string, List<List<float>>>>(json);
 
-            // Convert into dictionary of Vector2
             ebikePaths = new Dictionary<string, List<Vector2>>();
             foreach (var entry in rawData)
             {
@@ -66,15 +75,12 @@ public class Ebike : MonoBehaviour
                     if (coords.Count >= 2)
                         path.Add(new Vector2(coords[0], coords[1]));
                 }
-
                 ebikePaths[entry.Key] = path;
             }
 
-            // Example: log first point
             if (ebikePaths.ContainsKey("186_ebike"))
             {
                 Debug.Log("Loaded path for 186_ebike with " + ebikePaths["186_ebike"].Count + " points.");
-                //Debug.Log("First point: " + ebikePaths["186_ebike"][0]);
             }
 
             return ebikePaths;
@@ -86,6 +92,7 @@ public class Ebike : MonoBehaviour
         }
     }
 
+    // Convert Vector2 paths into Vector3 for Unity's NavMesh
     Dictionary<string, List<Vector3>> ConvertToVector3(Dictionary<string, List<Vector2>> data)
     {
         var paths = new Dictionary<string, List<Vector3>>(data.Count);
@@ -95,9 +102,9 @@ public class Ebike : MonoBehaviour
             var key = obj.Key;
             var path = obj.Value;
             var newPath = new List<Vector3>();
-            for (var i = 0; i < path.Count; i++)
+
+            foreach (var vector in path)
             {
-                var vector = path[i];
                 var x = vector.x * xConversion - xOffset;
                 var z = vector.y * zConversion - zOffset;
                 newPath.Add(new Vector3(x, 1, z));
