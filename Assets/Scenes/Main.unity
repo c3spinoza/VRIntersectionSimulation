@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17655559, g: 0.22097449, b: 0.30331758, a: 1}
+  m_IndirectSpecularColor: {r: 0.17648877, g: 0.22090124, b: 0.30321443, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18743,7 +18743,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 3a2756d3dbefa407b8a59e1aa6f3e7b2, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 06c176da9e26eb24a9990947cb4c547a, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &531525420
 Transform:
@@ -21779,7 +21779,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: c37527d62f2c247d18b21bfa86acbe8d, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: c95a14fb121e37d4ca1f3ba2f69fe5a8, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &609341309
 Transform:
@@ -85629,6 +85629,11 @@ PrefabInstance:
       propertyPath: m_AgentTypeID
       value: -1372625422
       objectReference: {fileID: 0}
+    - target: {fileID: 1419014749441801688, guid: ecd53b19a3ac86c42864c7c6e4a24172,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2090884456405920375, guid: ecd53b19a3ac86c42864c7c6e4a24172,
         type: 3}
       propertyPath: m_AgentTypeID
@@ -85888,6 +85893,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AgentTypeID
       value: -1372625422
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040925979376860595, guid: ecd53b19a3ac86c42864c7c6e4a24172,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316292408308984290, guid: ecd53b19a3ac86c42864c7c6e4a24172,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5442699680800738734, guid: ecd53b19a3ac86c42864c7c6e4a24172,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5480835166729905081, guid: ecd53b19a3ac86c42864c7c6e4a24172,
         type: 3}
@@ -86159,6 +86179,11 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[8]
       value: 
       objectReference: {fileID: 398671025}
+    - target: {fileID: 9178825237296349823, guid: ecd53b19a3ac86c42864c7c6e4a24172,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 782105368921528965, guid: ecd53b19a3ac86c42864c7c6e4a24172, type: 3}
     m_RemovedGameObjects: []
@@ -86517,6 +86542,11 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[7]
       value: 
       objectReference: {fileID: 306459028}
+    - target: {fileID: 4209071842674649470, guid: b58b7454c93307147835563b6669a627,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4233486640863601378, guid: b58b7454c93307147835563b6669a627,
         type: 3}
       propertyPath: m_AgentTypeID
@@ -86612,6 +86642,16 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[7]
       value: 
       objectReference: {fileID: 306459028}
+    - target: {fileID: 5103464310134064292, guid: b58b7454c93307147835563b6669a627,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824138487974842302, guid: b58b7454c93307147835563b6669a627,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6209528569337748782, guid: b58b7454c93307147835563b6669a627,
         type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -86655,6 +86695,11 @@ PrefabInstance:
     - target: {fileID: 8275346598882298946, guid: b58b7454c93307147835563b6669a627,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8329937505636260200, guid: b58b7454c93307147835563b6669a627,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8922356181483981203, guid: b58b7454c93307147835563b6669a627,
@@ -87982,6 +88027,11 @@ PrefabInstance:
       propertyPath: m_AgentTypeID
       value: -1372625422
       objectReference: {fileID: 0}
+    - target: {fileID: 1140461593942092517, guid: f8fd2038250b3474294912304db99d80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1503088619462752561, guid: f8fd2038250b3474294912304db99d80,
         type: 3}
       propertyPath: m_AgentTypeID
@@ -88171,6 +88221,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AgentTypeID
       value: -1372625422
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106271081319328001, guid: f8fd2038250b3474294912304db99d80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222737348583815786, guid: f8fd2038250b3474294912304db99d80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4700690331477881168, guid: f8fd2038250b3474294912304db99d80,
         type: 3}
@@ -89036,6 +89096,11 @@ PrefabInstance:
       propertyPath: m_AgentTypeID
       value: -1372625422
       objectReference: {fileID: 0}
+    - target: {fileID: 1160874822182016814, guid: aecf6ef27d4314e47a970ff82bc0ba2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1461658439582976344, guid: aecf6ef27d4314e47a970ff82bc0ba2a,
         type: 3}
       propertyPath: m_Name
@@ -89336,6 +89401,11 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[10]
       value: 
       objectReference: {fileID: 306459028}
+    - target: {fileID: 5860547594293119407, guid: aecf6ef27d4314e47a970ff82bc0ba2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7630260656529440439, guid: aecf6ef27d4314e47a970ff82bc0ba2a,
         type: 3}
       propertyPath: m_AgentTypeID
@@ -89401,6 +89471,11 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[10]
       value: 
       objectReference: {fileID: 306459028}
+    - target: {fileID: 9100896041089831899, guid: aecf6ef27d4314e47a970ff82bc0ba2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2385660955096567245, guid: aecf6ef27d4314e47a970ff82bc0ba2a, type: 3}
     m_RemovedGameObjects: []
