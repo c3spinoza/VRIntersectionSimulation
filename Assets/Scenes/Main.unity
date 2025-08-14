@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17648876, g: 0.22090124, b: 0.30321443, a: 1}
+  m_IndirectSpecularColor: {r: 0.17648877, g: 0.22090124, b: 0.30321443, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -21132,6 +21132,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ebikeScript: {fileID: 7140368}
   stoppingDistance: 0.5
+--- !u!65 &597328468
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597328457}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &597959233
 GameObject:
   m_ObjectHideFlags: 0
@@ -24285,10 +24306,200 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 186918695816316217, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 493599980925433657, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 534995080422403525, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 550601212314224728, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1049215756669502608, guid: 43aef25f5164c403faa80c0edefa7cb5,
         type: 3}
       propertyPath: m_Name
       value: Boy On Bike (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1049215756669502608, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127421169023502129, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282873586962403852, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345516023319822286, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1682703438585974996, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2347602852841933858, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2935566211427700333, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970823798419608166, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663377660950737393, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3703223825865173247, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3858348213471208881, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4556318915410152308, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4569626151368422540, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704261151745225941, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4912552858583921505, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5160016078324244144, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5197709819678095010, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198258710494328749, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445170742331027479, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5545596771497605309, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5590369197192427738, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852430419610397124, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6161264885372684402, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6486918493020063321, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760056394917748091, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976271550488854823, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145494477313092086, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7231302317452347813, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7530167032868640911, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577899371615468924, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806816708920431021, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026662274845384374, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8145599296834081556, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8225825042948845126, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8259902262874565938, guid: 43aef25f5164c403faa80c0edefa7cb5,
         type: 3}
@@ -24340,6 +24551,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8598264630019527681, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8659684225877431103, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852468920461435017, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000461133407974033, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064289882554558822, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2266800910435472897, guid: 43aef25f5164c403faa80c0edefa7cb5, type: 3}
     m_RemovedGameObjects: []
@@ -24353,6 +24589,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 597328465}
+    - targetCorrespondingSourceObject: {fileID: 1049215756669502608, guid: 43aef25f5164c403faa80c0edefa7cb5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 597328468}
     - targetCorrespondingSourceObject: {fileID: 493599980925433657, guid: 43aef25f5164c403faa80c0edefa7cb5,
         type: 3}
       insertIndex: -1
@@ -44103,7 +44343,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1217462123}
-  - component: {fileID: 1217462122}
   - component: {fileID: 1217462124}
   m_Layer: 0
   m_Name: Traffic Light Controller
@@ -44112,18 +44351,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1217462122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217462121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3bc2250196764fe2a4e292ec545900d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1217462123
 Transform:
   m_ObjectHideFlags: 0
@@ -44152,17 +44379,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b10fedcdd4338e4989c9203e330c71c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vehicleLight_EW: {fileID: 0}
-  vehicleLight_NS: {fileID: 0}
-  pedestrianLight_EW: {fileID: 0}
-  pedestrianLight_NS: {fileID: 0}
-  vehicleGreenTime_EW: 10
+  vehicleLight_EW: {fileID: 764929151}
+  vehicleLight_NS: {fileID: 1678006960}
+  pedestrianLight_EW: {fileID: 626697961}
+  pedestrianLight_NS: {fileID: 2078552902}
+  phaseTotal_NS: 40
+  phaseTotal_EW: 20
+  vehicleYellowTime_NS: 4
   vehicleYellowTime_EW: 3
-  vehicleGreenTime_NS: 10
-  vehicleYellowTime_NS: 3
-  pedestrianGreenTime: 7
-  pedestrianYellowTime: 3
   allRedBufferTime: 1
+  startWithNS: 1
 --- !u!1 &1219909992
 GameObject:
   m_ObjectHideFlags: 0
@@ -57993,9 +58219,11 @@ MonoBehaviour:
     m_Bits: 128
   leftSidebar: {fileID: 484771600}
   rightSidebar: {fileID: 611368392}
-  safeColor: {r: 0, g: 1, b: 0, a: 0.39215687}
-  dangerColor: {r: 1, g: 0, b: 0, a: 0.39215687}
+  safeColor: {r: 0.8490566, g: 0.107333556, b: 0.107333556, a: 0.39215687}
+  dangerColor: {r: 0.28235295, g: 1, b: 0, a: 0.39215687}
   playerRb: {fileID: 1530858950}
+  referenceTransform: {fileID: 0}
+  invertSides: 0
 --- !u!54 &1530858950
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -60755,9 +60983,9 @@ MonoBehaviour:
   southLeftLane: {fileID: 1993808976}
   east120Lane: {fileID: 1102035074}
   west120Lane: {fileID: 1139407667}
-  phase1Duration: 15
-  phase2Duration: 15
-  phase3Duration: 15
+  phase1Duration: 20
+  phase2Duration: 20
+  phase3Duration: 20
   staggerBetweenCars: 0.35
   exclusivePhases: 0
 --- !u!65 &1635569525
